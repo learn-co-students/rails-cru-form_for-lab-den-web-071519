@@ -1,0 +1,8 @@
+<em><h1>My Song</h1></em>
+
+  <h2><%= "Name: " + @song.name %></h2>
+  <a href="/genres/<%=@song.genre_id%>">My Genre</a><br>
+  <a href="/artists/<%=@song.artist_id%>">My Artist</a>
+
+  <h4><%= link_to "Edit Song", edit_song_path(@song)%></h4>
+  <h4><%= link_to "Index Page", songs_path%></h4>

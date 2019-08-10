@@ -1,0 +1,8 @@
+<em><h1>My Artist</h1></em>
+
+<h2><%= "Name: " + @artist.name %></h2>
+<p><%= "My artist bio: " + @artist.bio %></p>
+<h4><%= link_to "Edit Artist", edit_artist_path(@artist)%></h4>
+
+
+<h4><%= link_to "Index Page", artists_path%></h4>

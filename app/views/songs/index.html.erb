@@ -1,0 +1,9 @@
+<h1>Song Index</h1>
+
+<%@songs.each do |a|%><br>
+  <p>My song: <%= link_to a.name, song_path(a)%></p>
+  <a href="/genres/<%=a.genre_id%>">My Genre</a><br>
+  <a href="/artists/<%=a.artist_id%>">My Artist</a>
+<% end %><br>
+
+<small><%= link_to "Create New Song", new_song_path%></small>
